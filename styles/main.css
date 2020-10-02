@@ -1,0 +1,43 @@
+/* boxmodel */
+/* * {
+	border: 1px dotted darkgray;
+	outline: 1px dotted black;
+} */
+
+/* Base information */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* links */
+body a {
+	color: #800;
+	text-decoration: none;
+}
+
+body a:hover {
+	text-decoration: underline;
+}
+
+.anchor::before {
+	content: "§ "
+}
+
+.crypto-address {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: xx-small
+}
+
+.copyright {
+	color: #800;
+}

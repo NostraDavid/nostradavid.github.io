@@ -1,0 +1,32 @@
+{
+	"name": "NostraDavid",
+	"short_name": "NostraDavid",
+	"description": "NostraDavid's personal site",
+	"icons": [
+		{
+			"sizes": "192x192",
+			"src": "/images/icons-192.png",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/images/icons-512.png",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"categories": [
+		"entertainment",
+		"games",
+		"social",
+	],
+	"theme_color": "#880000",
+	"background_color": "#880000",
+	"display": "minimal-ui",
+	"scope": "/",
+	"start_url": "/index.html",
+	"lang": "en-GB",
+	"dir": "auto",
+	"orientation": "any"
+}

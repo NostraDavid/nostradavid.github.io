@@ -1,0 +1,44 @@
+/* layout */
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    ". main aside ."
+    "footer footer footer footer";
+}
+
+body>header {
+  grid-area: header;
+  text-align: center;
+}
+
+body>nav {
+  grid-area: menu-bar;
+}
+
+body>main {
+  grid-area: main;
+}
+
+body>footer {
+  grid-area: footer;
+}
+
+body>aside {
+	grid-area: aside;
+}
+
+@media (max-width: 950px) {
+  body {
+    grid-template-columns: 1fr 2fr 1fr;
+		grid-template-areas:
+		"header"
+		"main"
+		"aside"
+    "footer";
+  }
+  footer {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
