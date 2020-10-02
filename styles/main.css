@@ -4,7 +4,7 @@
 	outline: 1px dotted black;
 } */
 
-/* Base information */
+/* Base stuff */
 
 html {
 	box-sizing: border-box;
@@ -40,4 +40,8 @@ body a:hover {
 
 .copyright {
 	color: #800;
+}
+
+p {
+	text-align: justify
 }

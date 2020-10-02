@@ -4,7 +4,7 @@ body {
   grid-template-areas:
     "header header header header"
     ". main aside ."
-    "footer footer footer footer";
+    ". footer footer .";
 }
 
 body>header {
@@ -30,15 +30,19 @@ body>aside {
 
 @media (max-width: 950px) {
   body {
-    grid-template-columns: 1fr 2fr 1fr;
 		grid-template-areas:
 		"header"
 		"main"
 		"aside"
     "footer";
-  }
-  footer {
-    margin: 0 auto;
-    max-width: 1280px;
+	}
+	body>main {
+		margin: 0 0 0 10px;
+	}
+	body>aside {
+		margin: 0 0 0 10px;
+	}
+  body>footer {
+		margin: 0 0 0 10px;
   }
 }
