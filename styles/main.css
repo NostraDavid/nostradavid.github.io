@@ -32,8 +32,11 @@ h2>a {
 	align-items: center;
 }
 
-/* links */
+a>span {
+	padding: 0 0 0 .3em;
+}
 
+/* links */
 body a {
 	color: #800;
 	text-decoration: none;
