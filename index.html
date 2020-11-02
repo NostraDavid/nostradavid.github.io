@@ -130,29 +130,16 @@
 			<p class=crypto-address>DHbW72pYTog8GnuugZ1UXib5YmEv8ws4Ba</p>
 		</figure>
 
-		<div id="hyvor-talk-view" style="display: none"></div>
+		<p>If you know, you know.</p>
+
+		<hr>
+
+		<div id="hyvor-talk-view"></div>
 		<script type="text/javascript">
 			var HYVOR_TALK_WEBSITE = 1095; // DO NOT CHANGE THIS
 			var HYVOR_TALK_CONFIG = { url: false, id: false };
-
-			const hyvor = document.getElementById("hyvor-talk-view");
-			const toggleComments = (el) => {
-				if (hyvor.innerHTML == "") {
-					let s = document.createElement('script');
-					s.setAttribute('type', 'text/javascript');
-					s.setAttribute('src', '//talk.hyvor.com/web-api/embed');
-					document.querySelector("body>main").appendChild(s);
-				}
-
-				if ("none" == hyvor.style.display) {
-					el.innerText = "Hide comments"
-					hyvor.style.display = "";
-				} else {
-					el.innerText = "Show comments"
-					hyvor.style.display = "none";
-				}
-			}
 		</script>
+		<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
 	</main>
 
 	<aside>
