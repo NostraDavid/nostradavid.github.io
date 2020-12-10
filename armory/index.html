@@ -11,12 +11,8 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel=manifest href=/manifest.json />
 	<link rel=icon href=/images/favicon.svg />
-	<link rel=preload href=/styles/main.css as=style onload="this.rel='stylesheet';this.onload=null">
-	<link rel=preload href=/styles/layout.css as=style onload="this.rel='stylesheet';this.onload=null">
-	<noscript>
-		<link rel=stylesheet href="/styles/main.css" />
-		<link rel=stylesheet href="/styles/layout.css" />
-	</noscript>
+	<link rel=stylesheet href="/styles/main.css" />
+	<link rel=stylesheet href="/styles/layout.css" />
 
 	<!-- General OpenGraph data - shared between Facebook and Twitter -->
 	<meta property=og:url content="https://nostradavid.com/" />
@@ -40,13 +36,15 @@
 
 <body>
 	<header>
-		<img src="/images/youtube-banner.jpg" width="100%" alt="a banner ">
+				<a href="/"><img src="/images/youtube-banner.jpg" width="100%" alt="a banner "></a>
+
 	</header>
 
 	<main>
 		<h1>World of Warcraft</h1>
 		<p>I've relatively recently (<time>2020-08-22</time>) started playing World of Warcraft and it's been quite an experience!</p>
 		<p>I figure I make a page where I can slap down some information I want to revisit.</p>
+		<p><strong>2020-12-10 Note:</strong> This list is already getting outdated - my char list is <em>way</em> longer now. Not to mention most of these are currently stuck at Level 10, because of the level squish + no time to play. Streaming with a friend has been taking a large chunk of my time, as has work ;_;</p>
 		<h2><a id=games class=anchor href="#games"><span>My characters</span></a></h2>
 		<p>Sorted in order of creation</p>
 		<!-- JS to get the original image of a char: document.querySelector(".Art.CharacterProfile-image>.Art-image").style.backgroundImage -->

@@ -62,3 +62,11 @@ body a:hover {
 p {
 	text-align: justify
 }
+
+ul>li {
+	list-style-type: '– '
+}
+
+ul>ul>li {
+	list-style-type: ' + '
+}
