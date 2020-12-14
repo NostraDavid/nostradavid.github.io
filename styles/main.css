@@ -76,10 +76,25 @@ p {
 	text-align: justify
 }
 
-ul>li {
-	list-style-type: '– '
+ul.toc li {
+	list-style-type: ''
 }
 
-ul>ul>li {
-	list-style-type: ' + '
+.tocnumber {
+	color: #000;
+}
+
+.toctogglecheckbox:checked + .toctitle .toctogglelabel:after {
+	content: 'show';
+}
+
+.toctogglecheckbox:not(:checked) + .toctitle .toctogglelabel:after {
+	content: 'hide';
+}
+
+:not(:checked) > .toctogglespan:before {
+	content: ' [';
+}
+:not(:checked) > .toctogglespan:after {
+	content: ']';
 }
