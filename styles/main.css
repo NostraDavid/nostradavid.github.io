@@ -59,7 +59,20 @@ body a:hover {
 	color: #800;
 }
 
+h1 {
+	margin: 21px 0 0 0;
+}
+
+h2 {
+	margin: 20px 0 0 0;
+}
+
+h3 {
+	margin: 19px 0 0 0;
+}
+
 p {
+	margin: 0 0 2px 0;
 	text-align: justify
 }
 
