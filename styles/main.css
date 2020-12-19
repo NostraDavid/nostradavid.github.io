@@ -11,11 +11,14 @@ html {
 	box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 }
@@ -76,25 +79,83 @@ p {
 	text-align: justify
 }
 
-ul.toc li {
-	list-style-type: ''
+/* Here's a fuckton of CSS to get the TOC working, as it would on wikipedia.org */
+.toc {
+	display: table
+}
+
+.toc>ul>li {
+	margin-bottom: 4px;
+}
+
+.toc ul {
+	margin: 0;
+}
+
+:not(:checked)>.toctogglespan:before {
+	content: ' [';
+	font: 11px arial;
+}
+
+:not(:checked)>.toctogglespan:after {
+	content: ']';
+	font: 11px arial;
+}
+
+.toctogglelabel {
+	cursor: pointer;
+	color: #800;
+	font: 11px arial;
+}
+
+.toctogglelabel:hover {
+	text-decoration: underline
+}
+
+.toctogglecheckbox:checked+.toctitle .toctogglelabel:after {
+	content: 'show'
+}
+
+.toctogglecheckbox:not(:checked)+.toctitle .toctogglelabel:after {
+	content: 'hide'
+}
+
+.toctogglecheckbox:checked~ul {
+	display: none
+}
+
+.toc,
+.toccolours {
+	border: 1px solid #a2a9b1;
+	background-color: #f8f9fa;
+	padding: 8px;
+	text-align: center
+}
+
+.toc h2 {
+	display: inline;
+	font-size: 100%;
+}
+
+.toc ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding: 0;
+	text-align: left
+}
+
+.toc ul ul {
+	margin: 0 0 0 2em
+}
+
+.tocnumber,
+.toctext {
+	display: table-cell;
+	text-decoration: inherit
 }
 
 .tocnumber {
 	color: #000;
 }
 
-.toctogglecheckbox:checked + .toctitle .toctogglelabel:after {
-	content: 'show';
-}
-
-.toctogglecheckbox:not(:checked) + .toctitle .toctogglelabel:after {
-	content: 'hide';
-}
-
-:not(:checked) > .toctogglespan:before {
-	content: ' [';
-}
-:not(:checked) > .toctogglespan:after {
-	content: ']';
-}
+/* END OF TOC */
