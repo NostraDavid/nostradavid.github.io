@@ -28,6 +28,7 @@ body>aside {
 	grid-area: aside;
 }
 
+/* Only re-order things if max-width is BELOW half of 1080p width */
 @media (max-width: 950px) {
   body {
 		grid-template-areas:
