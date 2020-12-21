@@ -26,8 +26,8 @@ body {
 /* main */
 
 main {
+	max-width: 1024px;
 	padding: 0 20px 0 20px;
-	margin: 0 20px 0 20px;
 }
 
 h2>a {
@@ -159,3 +159,11 @@ p {
 }
 
 /* END OF TOC */
+
+/* 960px = 1080p half of width */
+@media (max-width: 960px) {
+	main {
+		max-width: max-content;
+		/* max-width: 1700px; */
+	}
+}
