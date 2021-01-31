@@ -160,6 +160,15 @@ p {
 
 /* END OF TOC */
 
+body>main figure {
+	border: 1px solid #800;
+	border-radius: 4px;
+	box-shadow: 3px 3px 5px #555;
+	margin: 0 0 10px;
+	padding: 10px;
+	text-align: center
+}
+
 /* 960px = 1080p half of width */
 @media (max-width: 960px) {
 	main {
