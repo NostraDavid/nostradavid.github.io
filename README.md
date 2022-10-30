@@ -1,1 +1,5 @@
-# nostradavid.github.io / nostradavid.com
+# nostradavid.com
+
+Site available here:
+
+https://nostradavid.com/
