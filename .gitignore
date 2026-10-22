@@ -1,2 +1,5 @@
 
 .dccache
+.devenv/
+.direnv/
+__pycache__/
