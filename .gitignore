@@ -1,5 +1,8 @@
+# ignore all direct items, nonrecursively
+/*
 
-.dccache
-.devenv/
-.direnv/
-__pycache__/
+# unignore files
+!.gitignore
+!CNAME
+!README.md
+!index.html
